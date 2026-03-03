@@ -1,0 +1,57 @@
+# --- Environments ---
+venv/
+env/
+.env
+bin/
+lib/
+develop-eggs/
+dist/
+eggs/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+# Note: We don't ignore .ipynb files themselves, only their checkpoints and autosaves
+
+# --- Python Junk ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+include/
+
+# --- Data & Large Files ---
+# It is best practice not to commit raw datasets to Git. 
+# Use a data/ folder and keep it ignored.
+data/
+*.csv
+*.pcap
+*.sql
+*.sqlite
+*.zip
+*.tar.gz
+
+# --- Machine Learning Models ---
+# Large model weights (PyTorch/TensorFlow) shouldn't be in Git
+*.pth
+*.pt
+*.h5
+*.joblib
+*.pkl
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
+# PyTorch models
+*.pth
+*.pt
+*.ckpt

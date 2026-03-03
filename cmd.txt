@@ -1,0 +1,8 @@
+python -m venv venv
+.\venv\Scripts\activate
+pip install torch torchvision torchaudio
+pip install jupyter pandas numpy matplotlib scikit-learn
+pip install nbstripout
+python -m ipykernel install --user --name=venv --display-name "Python (DL-Practice)"
+nbstripout --install
+pip freeze > requirements.txt
