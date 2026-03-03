@@ -1,8 +1,14 @@
 python -m venv venv
 .\venv\Scripts\activate
+
+pip uninstall torch torchvision torchaudio
 pip install torch torchvision torchaudio
 pip install jupyter pandas numpy matplotlib scikit-learn
 pip install nbstripout
+
 python -m ipykernel install --user --name=venv --display-name "Python (DL-Practice)"
+
+pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+
 nbstripout --install
 pip freeze > requirements.txt
